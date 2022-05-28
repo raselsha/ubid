@@ -48,38 +48,71 @@ body{
     height:500px;
     background-image: linear-gradient(to right, #8d2993 , #8e3fea);
 }
-.main-menu{
+.main-menu-primary{
     background-color: #ffffff55;
 }
 
-.main-menu ul li:after{
+.main-menu-primary ul li:after{
     content: "|";
     color:#efefef;
 }
 
-.main-menu ul li a{
+.main-menu-primary ul li a{
     color:#efefef;
     padding-right: .8rem;
 padding-left: .8rem;
 }
-.main-menu li:last-child:after{
+.main-menu-primary li:last-child:after{
     content: "";
 }
-.main-menu .nav-link{
+.main-menu-primary .nav-link{
     display: inline;
     
 }
-.main-menu .nav-link:hover{
+.main-menu-primary .nav-link:hover{
     color:#922c89;
     
 }
+/* main-menu-secondary */
+.main-menu-secondary{
+    background-color: #922c89;
+}
 
+.main-menu-secondary ul li:after{
+    content: "|";
+    color:#fff;
+}
+
+.main-menu-secondary ul li a{
+    color:#fff;
+    padding-right: .8rem;
+padding-left: .8rem;
+}
+.main-menu-secondary li:last-child:after{
+    content: "";
+}
+.main-menu-secondary .nav-link{
+    display: inline;
+    
+}
+.main-menu-secondary .nav-link:hover{
+    color:#ddd;
+    
+}
+/* ============= */
 .hero-overlay {
     background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
 width: 100%;
 height: 500px;
+}
+.reg-overlay {
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+width: 100%;
+min-height:500px;
 }
 /* ========================slider================= */
 .carousel-item{
@@ -94,3 +127,42 @@ height: 500px;
     border-radius: 100%;
 }
 /* ======================service======================= */
+.services .title{
+    line-height: 0 !important; 
+}
+/* ========================statistics================== */
+.statistics{
+    background-color: #BB83CF1A;
+}
+/* ==================services==================== */
+.statistics .title{
+    line-height: 0 !important; 
+}
+/* =========================list timeline============ */
+
+.bar{
+    counter-reset: step;
+    counter-increment: step 0;
+}
+
+.bar li{
+    list-style-type: none;
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.bar li:before{
+    content: '';
+    counter-increment: step;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 100%;
+    line-height: 50px;
+    border: 1px solid #333;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left:-2px;
+}
