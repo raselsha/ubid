@@ -77,7 +77,7 @@
 		<div class="container my-5">
 			<div class="row">
 				<div class="col ">
-					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+					<div id="carouselExampleCaptions" class="carousel slider slide" data-bs-ride="carousel">
 						<div class="carousel-indicators">
 							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
 								class="active" aria-current="true" aria-label="Slide 1" class="rounded-circle"></button>
@@ -198,7 +198,7 @@
 				<div class="row m-0 p-0">
 					<div class="col-3  m-0 p-0">
 						<div class="stats" style=" background-color: #B966BE;">
-							<img src="images/stat1.png" alt="" class="" >
+							<img src="images/stat2.png" alt="" class="" >
 						</div>
 					</div>
 					<div class="col-9  m-0 p-0">
@@ -211,7 +211,7 @@
 				<div class="row m-0 p-0">
 					<div class="col-3  m-0 p-0">
 						<div class="stats" style=" background-color: #2BBAC0;">
-							<img src="images/stat1.png" alt="" class="" >
+							<img src="images/stat3.png" alt="" class="" >
 						</div>
 					</div>
 					<div class="col-9  m-0 p-0">
@@ -224,7 +224,7 @@
 				<div class="row m-0 p-0">
 					<div class="col-3  m-0 p-0">
 						<div class="stats" style=" background-color: #5D9500;">
-							<img src="images/stat1.png" alt="" class="" >
+							<img src="images/stat4.png" alt="" class="" >
 						</div>
 					</div>
 					<div class="col-9  m-0 p-0">
@@ -237,7 +237,8 @@
 	</div>
 </section>
 <!-- ====================== icon menu ==================== -->
-<section class="icon-menu bg-primary">
+<section class="icon-menu bg-primary position-relative">
+	<div class="icon-menu-overlay position-absolute" style="background-image:url('images/bg-icon-menu.png');"></div>
 	<div class="container p-4">
 		<div class="row">
 			<div class="col bg-white text-center p-4 m-2">
@@ -275,7 +276,7 @@
 	</div>
 </section>
 <!-- ====================== partner carousel ==================== -->
-<section class="py-5 services">
+<section class="py-5 partner">
 	<div class="container ">
 		<div class="row">
 			<div class="col text-center">
@@ -283,28 +284,56 @@
 				<img src="images/seperator.png" alt="">
 			</div>
 		</div>
-		<div class="row pt-4">
-			<div class="col p-0 m-0">
-				<div class="border border-2 border-end-0 text-center">
-					<img class="p-4" src="images/pertner1.png" alt="">
+		<div id="carouselPartnar" class="carousel slide mt-4" data-bs-ride="carousel">
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			  </button>
+			<div class="carousel-inner px-5 pt-3">
+				<div class="carousel-item active ">
+					<div class="row text-center">
+						<div class="col p-4 border">
+							<img src="images/partner1.png" alt="">
+						</div>
+						<div class="col p-4 border">
+							<img  src="images/partner2.png" alt="">
+						</div>
+						<div class="col p-4 border">
+							<img src="images/partner3.png" alt="">
+						</div>
+						<div class="col p-4 border">
+							<img src="images/partner4.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row text-center">
+						<div class="col p-4 border">
+							<img src="images/partner1.png" alt="">
+						</div>
+						<div class="col p-4 border">
+							<img  src="images/partner2.png" alt="">
+						</div>
+						<div class="col p-4 border">
+							<img src="images/partner3.png" alt="">
+						</div>
+						<div class="col p-4 border">
+							<img src="images/partner4.png" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col p-0 m-0">
-				<div class="border border-2 border-end-0 text-center">
-					<img class="p-4" src="images/pertner1.png" alt="">
-				</div>
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselPartnar" data-bs-slide-to="0"
+					class="active" aria-current="true" aria-label="Slide 1" class="rounded-circle"></button>
+				<button type="button" data-bs-target="#carouselPartnar" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
 			</div>
-			<div class="col p-0 m-0">
-				<div class="border border-2 border-end-0 text-center">
-					<img class="p-4" src="images/pertner1.png" alt="">
-				</div>
-			</div>
-			<div class="col p-0 m-0">
-				<div class="border border-2 text-center">
-					<img class="p-4" src="images/pertner1.png" alt="">
-				</div>
-			</div>
-		</div>
+		</div>		
 	</div>
 </section>
 <!-- ====================== how works ==================== -->
@@ -327,7 +356,7 @@
 	<div class="container py-5">
 		<div class="row">
 			<div class="col text-center py-5">
-				<h3 class="text-primary title">ইউবিআইডি কিভাবে কাজ করবে</h3>
+				<h3 class="text-primary title">মিডিয়া ও খবর</h3>
 			</div>
 		</div>
 		<div class="row">

@@ -131,17 +131,31 @@ background-size: cover;
 width: 100%;
 min-height:500px;
 }
-/* ========================slider================= */
-.carousel-item{
+/* ========================hero slider================= */
+.hero .carousel-item{
     height: 400px;
 }
-.carousel-item p{
+.hero .carousel-item p{
     font-size: 18px;
 }
-.carousel-indicators button{
+.hero .carousel-indicators button{
     width: 10px !important;
     height: 10px !important;
     border-radius: 100%;
+}
+/* ======================== partner slider================= */
+.partner .carousel-item{
+    height:200px;
+}
+
+.partner .carousel-item p{
+    font-size: 18px;
+}
+.partner .carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100%;
+    background-color: #7f3183;
 }
 /* ======================service======================= */
 .title{
@@ -240,6 +254,12 @@ label{
 }
 input[type="file"]{
     
+}
+/* =================icon menu========= */
+.icon-menu-overlay{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 /* ==================stats============ */
 .stats{
