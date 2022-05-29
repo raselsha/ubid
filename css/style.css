@@ -6,7 +6,7 @@
 }
 body{
     font-family: kalpurush;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* =============================bootstrap customize====================== */
@@ -23,6 +23,20 @@ body{
     border: 1px solid #3D087B !important;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #912790;;
+    border-color: #912790;
+}
+.btn-primary:hover, .btn-primary:active {
+    color: #fff;
+    background-color: #7f3183;
+    border-color: #7f3183;
+}
+.form-check-input:checked {
+    background-color: #912790;
+    border-color: #912790;
+  }
 /* =============================bootstrap customize====================== */
 /*============================ header ====================== */
 .top-menu li:after{
@@ -138,7 +152,7 @@ min-height:500px;
 .statistics .title{
     line-height: 0 !important; 
 }
-/* =========================list timeline============ */
+/* =========================regi form list timeline============ */
 .timeline {
     margin: 0;
     padding: 0;
@@ -153,18 +167,17 @@ min-height:500px;
     width: 20%;
     position: relative;
 }
-.timeline li::before{
+.timeline li::before{ 
     content: '';
-    line-height: 35px;
-    width: 35px;
-    height: 35px;
+    line-height: 28px;
+    width: 28px;
+    height: 28px;
     display: inline-block;
     border-radius: 100%;
-    border: 2px solid #828282;
-    margin: auto  auto;  
+    border: 2px solid #828282;  
     background: #F2F2F2;
     position: absolute;
-    top: 40px;
+    top: 43px;
     z-index: 2;
 }
 .timeline li:after{
@@ -184,8 +197,43 @@ min-height:500px;
 
 .timeline li.active::before{
     font-family: FontAwesome;
+    border: 2px solid #912790;  
+    background: #fff;
+    font-size: 20px;
+}
+.timeline li.finish::before{
+    font-family: FontAwesome;
     content: '\f00c';
     color:green;
     border: 2px solid #912790;  
     background: #fff;
+    font-size: 20px;
+}
+.timeline li.finish:after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #912790;
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    z-index: 0;
+}
+
+.timeline li.finish:last-child:after{
+    height: 0px;
+}
+
+
+.tab {
+    display: none;
+}
+
+/* ===============form========== */
+label{
+    font-size: 16px;
+}
+input[type="file"]{
+    
 }
