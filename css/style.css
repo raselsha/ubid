@@ -237,3 +237,11 @@ label{
 input[type="file"]{
     
 }
+/* ===========footer========== */
+footer{
+    font-size: 12px;
+}
+
+footer p{
+    color:£666;
+}
