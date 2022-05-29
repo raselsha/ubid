@@ -36,7 +36,10 @@ body{
 .form-check-input:checked {
     background-color: #912790;
     border-color: #912790;
-  }
+}
+.bg-primary{
+    background-color: #912790 !important;
+}
 /* =============================bootstrap customize====================== */
 /*============================ header ====================== */
 .top-menu li:after{
@@ -141,7 +144,7 @@ min-height:500px;
     border-radius: 100%;
 }
 /* ======================service======================= */
-.services .title{
+.title{
     line-height: 0 !important; 
 }
 /* ========================statistics================== */
@@ -149,8 +152,9 @@ min-height:500px;
     background-color: #BB83CF1A;
 }
 /* ==================services==================== */
-.statistics .title{
-    line-height: 0 !important; 
+.title{
+    line-height:0 !important; 
+    margin: 5px 0;
 }
 /* =========================regi form list timeline============ */
 .timeline {
@@ -235,6 +239,16 @@ label{
     font-size: 16px;
 }
 input[type="file"]{
+    
+}
+/* ==================stats============ */
+.stats{
+   
+    width:60px;
+    height:60px;
+    line-height:60px;
+    border-radius: 50%;
+    text-align: center;
     
 }
 /* ===========footer========== */
