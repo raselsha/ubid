@@ -115,7 +115,12 @@ body{
     color:#922c89;
     border-color:#922c89;
 }
-
+.form-switch .form-check-input{
+    background-position: right center;
+}
+.form-switch .form-check-input:checked{
+    background-position: left center;
+}
 /* =========================Navbar dark=============== */
 
 .navbar-dark{
