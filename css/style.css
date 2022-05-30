@@ -117,9 +117,17 @@ body{
 }
 .form-switch .form-check-input{
     background-position: right center;
+    padding: 5px 10px;
 }
 .form-switch .form-check-input:checked{
     background-position: left center;
+    border: 1px solid #fff;
+}
+.lang-en{
+    top: 2px;
+    left: 4px;
+    color: #888;
+    font-size: 11px;
 }
 /* =========================Navbar dark=============== */
 
