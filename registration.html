@@ -43,29 +43,29 @@
 
 	<!-- =================hero section======================= -->
 	<section class="">
-		<nav class="navbar navbar-expand-lg navbar-light main-menu-secondary" >
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container">
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+					data-bs-target="#main-menu-primary" aria-controls="main-menu-primary" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<div class="collapse navbar-collapse" id="main-menu-primary">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
-							<a class="nav-link px-4 ps-0" aria-current="page" href="#">ইউবিআইডি কি?</a>
+							<a class="nav-link" aria-current="page" href="#what-uidb">ইউবিআইডি কি?</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link px-4" aria-current="page" href="#">পরিসংখ্যান</a>
+							<a class="nav-link" aria-current="page" href="#statistics">পরিসংখ্যান</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link px-4" aria-current="page" href="#">সহযোগী অংশীদার</a>
+							<a class="nav-link" aria-current="page" href="#partner">সহযোগী অংশীদার</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link px-4" aria-current="page" href="#">ইউবিআইডি কিভাবে কাজ করবে</a>
+							<a class="nav-link" aria-current="page" href="#how-works">ইউবিআইডি কিভাবে কাজ করবে</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link px-4" aria-current="page" href="#">মিডিয়া ও খবর</a>
+							<a class="nav-link" aria-current="page" href="#media-news">মিডিয়া ও খবর</a>
 						</li>
 					</ul>
 				</div>
@@ -79,8 +79,8 @@
 	<section style="background-image:url('images/reg-overlay.png');">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<div class="m-5 bg-white py-5">
+				<div class="col-12 p-0">
+					<div class="m-0 m-md-5 bg-white py-5">
 						<h3 class="text-center border-bottom">ইউনিক বিজনেস আইডেন্টিফিকেশন এর জন্য আবেদন</h3>
 						<ul class='timeline d-flex pt-3 '>
 							<li class='step'>সদস্যপদ বাছাই</li>
@@ -89,15 +89,15 @@
 							<li class='step'>সংযুক্তি</li>
 							<li class='step'>দাখিল</li>
 						</ul>
-						<div class="p-5 mt-3">
+						<div class="p-2 p-md-5 mt-3">
 							<form id="regForm" action="">
 								<!-- =====================first tab========== -->
 								<div class="tab">
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 ">ইতোমধ্যে কোন সংস্থার সদস্য কিনা? <span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ইতোমধ্যে কোন সংস্থার সদস্য কিনা? <span class="text-danger">*</span></label>
 										</div>
-										<div class="col-2">
+										<div class="col-12 col-md-2">
 											<div class="form-check form-check-inline">
 												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
 												<label class="form-check-label" for="inlineRadio1">হ্যাঁ</label>
@@ -109,10 +109,10 @@
 										</div>
 									</div>
 									<div class="row my-4">
-										<div class="col-3">
-											<label class="ps-3 pt-2">সংস্থার নাম <span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">সংস্থার নাম <span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<select class="form-select" aria-label="Default select example">
 												<option selected>নির্বাচন করুন</option>
 												<option value="1">প্রোফাইল </option>
@@ -123,10 +123,10 @@
 										</div>
 									</div>
 									<div class="row my-4">
-										<div class="col-3">
-											<label class="ps-3 pt-2">সদস্যপদ নম্বর <span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">সদস্যপদ নম্বর <span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<div class="input-group">
 												<input type="text" class="form-control" >
 												<button class="btn btn-primary" type="button" >যাচাই করুন</button>
@@ -134,10 +134,10 @@
 										</div>
 									</div>
 									<div class="row my-3 pt-4">
-										<div class="col-3">
-											<label class="ps-3 pt-2">একাধিক সদস্যপদ <span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">একাধিক সদস্যপদ <span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<select class="form-select" aria-label="Default select example">
 												<option selected>নির্বাচন করুন</option>
 												<option value="1">প্রোফাইল </option>
@@ -148,10 +148,10 @@
 										</div>
 									</div>
 									<div class="row my-3">
-										<div class="col-3">
-											<label class="ps-3 pt-2">সদস্যপদ নম্বর <span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">সদস্যপদ নম্বর <span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<div class="input-group ">
 												<input type="text" class="form-control" >
 												<button class="btn btn-primary" type="button" >যাচাই করুন</button>
@@ -162,98 +162,98 @@
 								<!-- =====================second tab========== -->
 								<div class="tab">
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ক) ব্যবসা প্রতিষ্ঠানের নাম (বাংলায়):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ক) ব্যবসা প্রতিষ্ঠানের নাম (বাংলায়):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">খ) ব্যবসা প্রতিষ্ঠানের নাম (ইংরেজি):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">খ) ব্যবসা প্রতিষ্ঠানের নাম (ইংরেজি):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">গ) ওয়েব সাইট:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">গ) ওয়েব সাইট:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঘ) ফেসবুক পেজ লিঙ্ক (প্রযোজ্য ক্ষেত্রে):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঘ) ফেসবুক পেজ লিঙ্ক (প্রযোজ্য ক্ষেত্রে):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঙ) অফিসের ঠিকানা (বাংলায়):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঙ) অফিসের ঠিকানা (বাংলায়):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">চ) অফিসের ঠিকানা (ইংরেজি):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">চ) অফিসের ঠিকানা (ইংরেজি):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ছ) ফোন নম্বর:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ছ) ফোন নম্বর:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">জ) মোবাইল নম্বর:*<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">জ) মোবাইল নম্বর:*<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঝ) ইমেইল:*<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঝ) ইমেইল:*<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঞ) ব্যবসা শুরুর বছর:*<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঞ) ব্যবসা শুরুর বছর:*<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ট) ব্যবসার ধরণ: *<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ট) ব্যবসার ধরণ: *<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঠ) ডিজিটাল কমার্স প্রতিষ্ঠানের মালিকানার ধরন:*<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঠ) ডিজিটাল কমার্স প্রতিষ্ঠানের মালিকানার ধরন:*<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
@@ -262,50 +262,50 @@
 								<div class="tab">
 									<p>ডিজিটাল কমার্স প্রতিষ্ঠানের চেয়ারম্যান, ব্যবস্থাপনা পরিচালক এবং অন্যান্য পরিচালকদের নাম, ঠিকানা, জাতীয় পরিচয়পত্র নম্বর ও মোবাইল নম্বর</p>
 									<div class="row my-4 ">
-										<div class="col-3">
-											<label class="ps-3 pt-2">পদবী<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">পদবী<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-3">
-											<label class="ps-3 pt-2">জাতীয় পরিচয়পত্র নম্বর:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">জাতীয় পরিচয়পত্র নম্বর:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-3">
-											<label class="ps-3 pt-2">নাম:*<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">নাম:*<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-3">
-											<label class="ps-3 pt-2">ঠিকানা:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">ঠিকানা:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-3">
-											<label class="ps-3 pt-2">মোবাইল নম্বর:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">মোবাইল নম্বর:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-3">
-											<label class="ps-3 pt-2">ইমেইল:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-3">
+											<label class="ps-0 pt-2 ps-md-3">ইমেইল:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
@@ -313,287 +313,287 @@
 								<!-- =====================Fourth tab========== -->
 								<div class="tab">
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">১. ছবি<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">১. ছবি<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="custom-file-input" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">২. আবেদনকারীর জাতীয় পরিচয়পত্রের সত্যায়িত কপি<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">২. আবেদনকারীর জাতীয় পরিচয়পত্রের সত্যায়িত কপি<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">৩. আয়কর নিবন্ধন নম্বর সত্যায়িত কপি (যদি থাকে)<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">৩. আয়কর নিবন্ধন নম্বর সত্যায়িত কপি (যদি থাকে)<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">৪. কোম্পানি রেজিস্ট্রেশন নম্বরের সত্যায়িত কপি (যদি থাকে)<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">৪. কোম্পানি রেজিস্ট্রেশন নম্বরের সত্যায়িত কপি (যদি থাকে)<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">৫. ট্রেড লাইসেন্সের সত্যায়িত কপি (যদি থাকে)<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">৫. ট্রেড লাইসেন্সের সত্যায়িত কপি (যদি থাকে)<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">৬. পরিচালকগণের জাতীয় পরিচয়পত্রের সত্যায়িত কপি <span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">৬. পরিচালকগণের জাতীয় পরিচয়পত্রের সত্যায়িত কপি <span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">৭. প্রতিষ্ঠানের চেয়ারম্যানের জাতীয় পরিচয়পত্রের সত্যায়িত কপি<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">৭. প্রতিষ্ঠানের চেয়ারম্যানের জাতীয় পরিচয়পত্রের সত্যায়িত কপি<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">৮. বাড়ির মালিকের জাতীয় পরিচয়পত্রের সত্যায়িত কপি<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">৮. বাড়ির মালিকের জাতীয় পরিচয়পত্রের সত্যায়িত কপি<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">৯. ভাড়া অফিসের ক্ষেত্রে বাড়ি ফ্ল্যাটের মালিকের সাথে সম্পাদিত চুক্তির দলিলের সত্যায়িত কপি<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">৯. ভাড়া অফিসের ক্ষেত্রে বাড়ি ফ্ল্যাটের মালিকের সাথে সম্পাদিত চুক্তির দলিলের সত্যায়িত কপি<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">১০. ভ্যাট নিবন্ধন নম্বর এর সত্যায়িত কপি (যদি থাকে)<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">১০. ভ্যাট নিবন্ধন নম্বর এর সত্যায়িত কপি (যদি থাকে)<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">১১. স্থানীয় চেয়ারম্যান / ওয়ার্ড কমিশনার / গণ্যমান্য ব্যক্তির সুপারিশ<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">১১. স্থানীয় চেয়ারম্যান / ওয়ার্ড কমিশনার / গণ্যমান্য ব্যক্তির সুপারিশ<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="file" class="" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-5">
-											<label class="ps-3 pt-2">+ আরো ফাইল যোগ করুন</label>
+										<div class="col-12 col-md-5">
+											<label class="ps-0 pt-2 ps-md-3">+ আরো ফাইল যোগ করুন</label>
 										</div>
 									</div>
 								</div>
 								<!-- =====================Fifth tab========== -->
 								<div class="tab">
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3">ইতোমধ্যে কোন সংস্থার সদস্য কিনা? <span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 ps-md-3">ইতোমধ্যে কোন সংস্থার সদস্য কিনা? <span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											হ্যাঁ
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">সদস্যপদ নম্বর<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">সদস্যপদ নম্বর<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" value="সদস্যপদ নম্বর" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">একাধিক সদস্যপদ<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">একাধিক সদস্যপদ<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">একাধিক সদস্যপদ নম্বর<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">একাধিক সদস্যপদ নম্বর<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ক) ব্যবসা প্রতিষ্ঠানের নাম (বাংলায়):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ক) ব্যবসা প্রতিষ্ঠানের নাম (বাংলায়):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">খ) ব্যবসা প্রতিষ্ঠানের নাম (ইংরেজি):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">খ) ব্যবসা প্রতিষ্ঠানের নাম (ইংরেজি):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">গ) ওয়েব সাইট:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">গ) ওয়েব সাইট:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঘ) ফেসবুক পেজ লিঙ্ক (প্রযোজ্য ক্ষেত্রে):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঘ) ফেসবুক পেজ লিঙ্ক (প্রযোজ্য ক্ষেত্রে):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঙ) অফিসের ঠিকানা (বাংলায়):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঙ) অফিসের ঠিকানা (বাংলায়):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">চ) অফিসের ঠিকানা (ইংরেজি):<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">চ) অফিসের ঠিকানা (ইংরেজি):<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ছ) ফোন নম্বর:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ছ) ফোন নম্বর:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">জ) মোবাইল নম্বর:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">জ) মোবাইল নম্বর:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঝ) ইমেইল:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঝ) ইমেইল:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঞ) ব্যবসা শুরুর বছর:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঞ) ব্যবসা শুরুর বছর:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ট) ব্যবসার ধরণ: <span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ট) ব্যবসার ধরণ: <span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঠ) ডিজিটাল কমার্স প্রতিষ্ঠানের মালিকানার ধরন:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঠ) ডিজিটাল কমার্স প্রতিষ্ঠানের মালিকানার ধরন:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col">
+										<div class="col-12">
 											<p>ডিজিটাল কমার্স প্রতিষ্ঠানের চেয়ারম্যান, ব্যবস্থাপনা পরিচালক এবং অন্যান্য পরিচালকদের নাম, ঠিকানা, জাতীয় পরিচয়পত্র নম্বর ও মোবাইল নম্বর</p>
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">পদবী<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">পদবী<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">জাতীয় পরিচয়পত্র নম্বর:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">জাতীয় পরিচয়পত্র নম্বর:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">নাম:<span class="text-danger">*</span></label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">নাম:<span class="text-danger">*</span></label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ঠিকানা:</label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ঠিকানা:</label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">মোবাইল নম্বর:</label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">মোবাইল নম্বর:</label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">ইমেইল:</label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">ইমেইল:</label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
 									<div class="row my-4 ">
-										<div class="col-4">
-											<label class="ps-3 pt-2">সংযুক্তি</label>
+										<div class="col-12 col-md-4">
+											<label class="ps-0 pt-2 ps-md-3">সংযুক্তি</label>
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-5">
 											<input type="text" class="form-control" >
 										</div>
 									</div>
@@ -601,11 +601,11 @@
 								</div>
 								<!-- ===============next/prev and save button============= -->
 								<div class="row my-3">
-									<div class="col-3">
+									<div class="col-12 col-md-3">
 										
 									</div>
-									<div class="col-5">
-										<div class="text-end">
+									<div class="col-12 col-md-5">
+										<div class="text-center text-md-end pe-md-4">
 											<button class="btn btn-danger" type="button" id="prevBtn" onclick="nextPrev(-1)">পূর্ববর্তী</button>
 											<button class="btn btn-warning" type="button" >সংরক্ষণ </button>
 											<button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">পরবর্তী</button>
@@ -621,7 +621,7 @@
 	</section>
 	<!-- =========================footer================= -->
 	<footer>
-		<nav class="navbar navbar-expand-lg main-menu-secondary" >
+		<nav class="navbar navbar-expand-lg navbar-dark" >
 			<div class="container">
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -660,17 +660,17 @@
 		</nav>
 		<div class="container">
 			<div class="row d-flex align-items-center py-3">
-				<div class="col text-start">
+				<div class="col-7 col-md-4 text-start order-1 order-sm-1">
 					<p class="m-0">পরিকল্পনা ও বাস্তবায়নে </p>
 					<img src="/images/footer2.png" alt="" height="30">
 					<img src="/images/footer1.png" alt="" height="30">
 					<img src="/images/footer3.png" alt="" height="30">
 					<img src="/images/footer4.png" alt="" height="30">
 				</div>
-				<div class="col text-center pt-3"><p>কপিরাইট ২০২১ সর্বস্বত্ব সংরক্ষিত গণপ্রজাতন্ত্রী বাংলাদেশ সরকার </p></div>
-				<div class="col text-end">
+				<div class="col-12 col-md-4 text-center pt-3 order-3 order-sm-2"><p>কপিরাইট ২০২১ সর্বস্বত্ব সংরক্ষিত গণপ্রজাতন্ত্রী বাংলাদেশ সরকার </p></div>
+				<div class="col-5 col-md-4 text-end order-2 order-sm-3">
 					<p class="m-0">কারিগরি সহযোগিতায়</p>
-					<img src="/images/footer5.png" alt="" height="30">
+					<img src="/images/footer5.png" alt="" class="img-fluid" height="30">
 				</div>
 			</div>
 		</div>
