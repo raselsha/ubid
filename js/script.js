@@ -81,6 +81,20 @@ x[n].classList.add("active");
 }
 
 // ====================form tab duplicate==================
+
+btnRemoveShowHide();
+
+function btnRemoveShowHide(){
+    var copiedItem = document.querySelectorAll('.copy-tab-form');
+    if( copiedItem.length>1){
+        document.getElementById('btnRemove').classList.remove('d-none');
+        document.getElementById('btnRemove').classList.add('d-inline');
+    }else{
+        document.getElementById('btnRemove').classList.remove('d-inline');
+        document.getElementById('btnRemove').classList.add('d-none');
+    }
+}
+
 function duplicate(){
     const elementToClone = document.querySelector('.copy-tab-form');
     let count = 0;
@@ -89,10 +103,16 @@ function duplicate(){
         document.querySelector('.copy-tab-form').parentNode.appendChild(clone);
         count++;
     }
+    btnRemoveShowHide();
 }
 
 function removeduplicate(){
-   
+    var copiedItem = document.querySelectorAll('.copy-tab-form');
+    const parent = document.querySelector('.third-tab-form');
+    if( copiedItem.length>1){
+        parent.removeChild(parent.lastChild);
+    } 
+    btnRemoveShowHide();
 }
 // ================language switch button functions================
 hideEnText()
