@@ -437,23 +437,23 @@ footer p{
         font-size:12px;
     }
     .timeline li::before{
-        top: 95px;
+        top: 54px;
     }
     .timeline li::after{
-        top: 107px;
+        top: 65px;
     }
     .timeline li.active::before{
-        top: 95px;
+        top: 54px;
     }
     .timeline li.finish::before{
-        top: 95px;
+        top: 54px;
     }
 
     .timeline li.active::after{
-        top: 107px;
+        top: 65px;
     }
     .timeline li.finish::after{
-        top: 107px;
+        top: 65px;
     }
     .tab{
         margin-top: 50px;

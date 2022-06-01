@@ -1,0 +1,213 @@
+<table class="table table-bordered table-hover">
+  <tbody>
+    <tr>
+      <td
+        style="width: 45%; visibility: hidden"
+        id="payment_info"
+        valign="top"
+      ></td>
+      <td>
+        <h4 class="form-section" style="margin: 0px">
+          কাগজপত্রের স্ক্যান কপি সংযুক্তি
+        </h4>
+
+        <table
+          class="table table-bordered table-hover"
+          id="loaded_n_total"
+          style="width: auto"
+        >
+          <tbody>
+            <tr>
+              <td colspan="3" id="uttaradhikar_area" style="display: none">
+                উত্তরাধিকার সনদ সংযুক্তি (অনধিক তিন মাসের মধ্যে ইস্যুকৃত) <br />
+                <label style="cursor: pointer"
+                  ><div class="radio">
+                    <span
+                      ><input
+                        type="radio"
+                        name="uttaradhikar_radio"
+                        value="uttaradhikar_online_exist"
+                    /></span>
+                  </div>
+                  অনলাইনে করা আছে</label
+                >
+                <label style="cursor: pointer"
+                  ><div class="radio">
+                    <span
+                      ><input
+                        type="radio"
+                        name="uttaradhikar_radio"
+                        value="uttaradhikar_manual"
+                    /></span>
+                  </div>
+                  ম্যানুয়াল উত্তরাধিকার সনদ আছে</label
+                >
+                <label style="cursor: pointer"
+                  ><div class="radio">
+                    <span
+                      ><input
+                        type="radio"
+                        name="uttaradhikar_radio"
+                        value="uttaradhikar_not_exist"
+                    /></span>
+                  </div>
+                  উত্তরাধিকার সনদ নাই</label
+                >
+                <br />
+                &nbsp;
+                <div id="uttaradhikar_online_sonod_area" style="display: none">
+                  অনলাইন সনদ নম্বর /আবেদন নম্বর লিখুন
+                  <input
+                    type="text"
+                    name="uttaradhikar_online_sonod_application"
+                    id="uttaradhikar_online_sonod_application"
+                  />
+                  <input
+                    type="button"
+                    value="খুজুন"
+                    id="search_uttaradhikar_online"
+                    class="btn btn-small btn-success"
+                    style="background-color: #099f19"
+                  />
+                </div>
+                &nbsp;
+                <div id="uttaradhikar_manual_sonod_area" style="display: none">
+                  ম্যানুয়াল উত্তরাধিকার সনদ সংযুক্তির জন্যে নিচের অপশন থেকে
+                  সংযুক্তি দিন
+                </div>
+                <div id="uttaradhikar_not_exist_area" style="display: none">
+                  <a href="https://prottoyon.gov.bd" target="_blank"
+                    >অনলাইনে উত্তরাধিকার সনদের আবেদন করার জন্য এখানে ক্লিক
+                    করুন</a
+                  >
+                </div>
+                <div
+                  id="uttaradhikar_response_message"
+                  style="display: none; color: red"
+                ></div>
+              </td>
+            </tr>
+            <tr id="document_row_2">
+              <td align="right">
+                <a
+                  onclick="show_window('https://mutation.land.gov.bd/display/display-file/ZDQxZDhjZDk4ZjAwYjIwNGU5ODAwOTk4ZWNmODQyN2U%3D/1/tmpJgNh7h.pdf');"
+                  >2022-06-01-17-16-36-000000.pdf</a
+                >
+
+                <input
+                  type="hidden"
+                  name="application_documents[2][name]"
+                  id="application-documents-2-name"
+                  value="2022-06-01-17-16-36-000000.pdf"
+                />
+              </td>
+              <td valign="middle">
+                <div class="input select">
+                  <select
+                    name="application_documents[2][application_required_document_id]"
+                    style="width: 230px; margin-bottom: 5px"
+                    onchange="javascript:check_if_others(this,2);"
+                    id="application-documents-2-application-required-document-id"
+                  >
+                    <option value="">সংযুক্ত কাগজের ধরণ নির্বাচন করুন</option>
+                    <option value="1">
+                      সংশ্লিষ্ট খতিয়ানের ফটোকপি/সার্টিফাইড কপি
+                    </option>
+                    <option value="2">
+                      (প্রযোজ্যক্ষেত্রে) মূল ওয়ারিশ সনদপত্র (অনধিক তিন মাসের
+                      মধ্যে ইস্যুকৃত)
+                    </option>
+                    <option value="3">মূল দলিলের সার্টিফাইড/ফটোকপি</option>
+                    <option value="4">
+                      সর্বশেষ জরিপের পর থেকে বায়া/পিট দলিল এর সার্টিফাইড/ফটোকপি
+                      (প্রযোজ্য ক্ষেত্রে))
+                    </option>
+                    <option value="5">ভূমি উন্নয়ন কর পরিশোধের দাখিলা</option>
+                    <option value="6">
+                      আদালতের রায়/ডিক্রির সার্টিফাইড কপি (প্রযোজ্য ক্ষেত্রে)
+                    </option>
+                    <option value="7">তফসিল বর্ণিত চৌহদ্দিসহ কলমি নক্সা</option>
+                    <option value="8">
+                      আবেদনকারী কর্তৃক সত্যায়িত প্রতিনিধির তথ্য
+                    </option>
+                    <option value="9">অন্যান্য</option>
+                    <option value="10">আবেদনকারীর জাতীয় পরিচয় পত্র</option>
+                    <option value="11">
+                      (অনলাইন) মূল ওয়ারিশ সনদপত্র (অনধিক তিন মাসের মধ্যে
+                      ইস্যুকৃত)
+                    </option>
+                  </select>
+                </div>
+                <input
+                  type="hidden"
+                  name="application_documents[2][number_of_pages]"
+                  id="application-documents-2-number-of-pages"
+                  value="1"
+                />
+                <div class="input text">
+                  <input
+                    type="text"
+                    name="application_documents[2][name_if_other]"
+                    class="form-control"
+                    placeholder="অন্য ফাইলটির ধরন"
+                    style="display: none"
+                    title="অন্য ফাইলটির ধরন"
+                    id="application-documents-2-name-if-other"
+                  />
+                </div>
+              </td>
+              <td valign="middle">
+                <a
+                  class="btn btn-icon-only red"
+                  onclick="javascript:rm_document(2,'2022-06-01-17-16-36-000000.pdf');"
+                >
+                  <i class="fa fa-times"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <progress
+          id="progressBar"
+          value="0"
+          max="100"
+          style="width: 300px; clear: both"
+        ></progress>
+        <span id="cancel" class="btn btn-icon-only red" style="display: none"
+          ><i class="fa fa-times"></i
+        ></span>
+        <div id="status" style="display: none"></div>
+
+        <input type="file" name="file1" id="file1" style="width: 250px" />
+
+        <br />
+        <br />
+        <input
+          type="hidden"
+          name="uttaradhikar_online_sonod_response"
+          value=""
+          id="uttaradhikar_online_sonod_response"
+        />
+        <input
+          type="hidden"
+          name="uttaradhikar_online_sonod_response_id"
+          value=""
+          id="uttaradhikar_online_sonod_response_id"
+        />
+        <h4 class="form-section" style="margin: 0px; color: red">
+          স্ক্যান কপি সংযুক্তি সম্পর্কিত নির্দেশবলী
+        </h4>
+        ১। আবেদনের সাথে প্রয়োজনীয় কাগজপত্রের সংযুক্তির ক্ষেত্রে স্ক্যান ফাইলটি
+        অবশ্যই jpg, png অথবা pdf ফরমেটে হতে হবে । অন্য কোন ফরমেটে হলে ফাইলটি
+        আপলোড করা যাবেনা ।<br />
+        ২। স্ক্যান ফাইলটির সাইজ অবশ্যই ২৫ মেগাবাইটের (MB) এর মধ্যে হতে হবে ।
+        <br />
+        ৩। ফাইল সাইজ ২৫ মেগাবাইটের বেশি হলে https://www.pdf2go.com/resize-pdf
+        অথাবা https://www.sejda.com/compress-pdf অথবা এধরনের যেকোন অনলাইন টুল
+        ব্যবহার করে pdf ফাইল সাইজ অনেক কমিয়ে আনা যায় । <br />
+        ৪। স্ক্যান ফাইলটি আপলোড হওয়ার পর তা কি ধরনের ফাইল (দলিল/খতিয়ান/ওয়ারিশ
+        সনদ) তা ড্রপডাউন হতে সিলেক্ট করে দিতে হবে । <br />
+      </td>
+    </tr>
+  </tbody>
+</table>

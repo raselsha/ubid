@@ -80,7 +80,7 @@ for (i = 0; i < x.length; i++) {
 x[n].classList.add("active");
 }
 
-// ====================form tab duplicate==================
+// ====================form tab forminput duplication==================
 
 btnRemoveShowHide();
 
@@ -114,6 +114,25 @@ function removeduplicate(){
     } 
     btnRemoveShowHide();
 }
+// ============dynamic file upload into form data tab 4==========
+
+function cloneRow() {
+    var row = document.querySelector(".dynamic-file-row"); // find row to copy
+    var table = document.getElementById("dynamic-file-table"); // find table to append to
+    var clone = row.cloneNode(true); // copy children too
+    clone.class = "dynamic-file-row"; // change id or other attributes/contents
+    table.appendChild(clone); // add new row to end of table
+  }
+  function SomeDeleteRowFunction() {
+    // event.target will be the input element.
+    var td = event.target.parentNode; 
+    var tr = td.parentNode; // the row to be removed
+    tr.parentNode.removeChild(tr);
+    if( copiedItem.length>1){
+        parent.removeChild(parent.lastChild);
+    } 
+}
+
 // ================language switch button functions================
 hideEnText()
 function hideEnText(){
