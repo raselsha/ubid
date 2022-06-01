@@ -117,6 +117,9 @@ function removeduplicate(){
 // ============dynamic file upload into form data tab 4==========
 
 function cloneRow() {
+    file_input = document.getElementById('dynamic-file-input'),
+    file_table = document.getElementById('dynamic-file-table');
+    
     var row = document.querySelector(".dynamic-file-row"); // find row to copy
     var table = document.getElementById("dynamic-file-table"); // find table to append to
     var clone = row.cloneNode(true); // copy children too
@@ -131,6 +134,26 @@ function cloneRow() {
     if( copiedItem.length>1){
         parent.removeChild(parent.lastChild);
     } 
+}
+
+// ================First tab items show hide functions================
+showHidefirstItems()
+function showHidefirsTabItems(){
+    var firstTabItems= document.getElementById('first-tab-items');
+    var inlineRadio1= document.getElementById('inlineRadio1');
+    var inlineRadio2= document.getElementById('inlineRadio2');
+    firstTabItems.classList.add('d-block');
+    if (inlineRadio1.checked == true){
+    firstTabItems.classList.add('d-block');
+    firstTabItems.classList.remove('d-none');
+        
+    }
+    if (inlineRadio2.checked == true){
+    firstTabItems.classList.remove('d-block');
+    firstTabItems.classList.add('d-none');
+        
+    }
+
 }
 
 // ================language switch button functions================
