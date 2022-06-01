@@ -4,7 +4,11 @@ showTab(currentTab); // Display the current tab
 function showTab(n) {
 // This function will display the specified tab of the form ...
 var x = document.getElementsByClassName("tab");
+for(var i=0;i<x.length;i++){
+    x[i].style.display = "none";
+}
 x[n].style.display = "block";
+currentTab = n;
 // ... and fix the Previous/Next buttons:
 if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
@@ -18,19 +22,13 @@ if (n == (x.length - 1)) {
 }
 // ... and run a function that displays the correct step indicator:
 stepIndicator(n);
-
 }
 
 function nextPrev(n) {
 // This function will figure out which tab to display
 var x = document.getElementsByClassName("tab");
 // Exit the function if any field in the current tab is invalid:
-if (n == 1){
-    document.getElementsByClassName("step")[currentTab].classList.add("finish");
-}
-else{
-    document.getElementsByClassName("step")[currentTab].classList.remove("finish");
-}
+if (n == 1 && !validateForm()) return false;
 // Hide the current tab:
 x[currentTab].style.display = "none";
 // Increase or decrease the current tab by 1:
@@ -45,6 +43,33 @@ if (currentTab >= x.length) {
 showTab(currentTab);
 }
 
+
+
+function validateForm() {
+    // This function deals with validation of the form fields
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[currentTab].getElementsByTagName("input");
+    // A loop that checks every input field in the current tab:
+    for (i = 0; i < y.length; i++) {
+      // If a field is empty...
+    if (y[i].value == "") {
+        // add an "invalid" class to the field:
+        y[i].className += " invalid";
+        // and set the current valid status to false:
+        valid = false;
+    }
+    }
+    // If the valid status is true, mark the step as finished and valid:
+    if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " finish";
+        const onclickAtt = document.createAttribute("onclick");
+        onclickAtt.value = "showTab("+currentTab+")";
+        document.getElementsByClassName("step")[currentTab].setAttributeNode(onclickAtt);
+    }
+    return valid; // return the valid status
+}
+
 function stepIndicator(n) {
 // This function removes the "active" class of all steps...
 var i, x = document.getElementsByClassName("step");
@@ -53,6 +78,21 @@ for (i = 0; i < x.length; i++) {
 }
 //... and adds the "active" class to the current step:
 x[n].classList.add("active");
+}
+
+// ====================form tab duplicate==================
+function duplicate(){
+    const elementToClone = document.querySelector('.copy-tab-form');
+    let count = 0;
+    while(count < 1) {
+        let clone = elementToClone.cloneNode(true);
+        document.querySelector('.copy-tab-form').parentNode.appendChild(clone);
+        count++;
+    }
+}
+
+function removeduplicate(){
+   
 }
 // ================language switch button functions================
 hideEnText()
@@ -70,21 +110,3 @@ function hideEnText(){
     langEn.classList.add('d-block');
   }
 }
-// ============================own carousel======================
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    stagePadding: 2,
-    nav:false,
-    responsive:{
-        0:{
-            items:2
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
-        }
-    }
-})

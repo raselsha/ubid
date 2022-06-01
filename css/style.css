@@ -239,6 +239,11 @@ body{
     width: 20%;
     position: relative;
 }
+
+.timeline li.active {
+    color:#912790;
+}
+
 .timeline li::before{ 
     content: '';
     line-height: 28px;
@@ -297,11 +302,13 @@ body{
     height: 0px;
 }
 
-
 .tab {
     display: none;
 }
 
+.finish:hover{
+cursor: pointer;
+}
 /* ===============form========== */
 label{
     font-size: 16px;
