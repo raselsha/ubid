@@ -334,7 +334,20 @@ cursor: pointer;
 label{
     font-size: 16px;
 }
-
+.add-more{
+    left: 50%;
+    right: 50%;
+    bottom:-12px;
+    padding: 3px 5px;
+    line-height: 1;
+}
+.remove-more{
+    left: 50%;
+    right: 50%;
+    bottom:-12px;
+    padding: 3px 5px;
+    line-height: 1;
+}
 /* =================icon menu========= */
 .icon-menu-overlay{
     background-size: cover;
@@ -342,8 +355,7 @@ label{
     background-position: center center;
 }
 /* ==================stats============ */
-.stats{
-   
+.stats{ 
     width:60px;
     height:60px;
     line-height:60px;
