@@ -132,10 +132,9 @@ $('.remove-more').hide();
 $(document).on('click', '.add-more', function (ev) {
     var $clone = $(this).parent().clone(true);
     $clone.appendTo($('.append-form'));
-    
     $('.remove-more').show();
     $(this).hide();
-    
+    $('.remove-more:last').hide();
 });
 
 $(document).on('click', '.remove-more', function () {
