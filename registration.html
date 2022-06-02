@@ -329,9 +329,9 @@
 									<div class="row my-4 ">
 										<div class="col-12 text-center">
 											<h1>কাগজপত্রের স্ক্যান কপি সংযুক্তি</h1>
-											<table class="table table-bordered">
-												<tbody  id="dynamic-file-table">
-													<tr class="dynamic-file-row">
+											<table class="table table-bordered" id="dynamic-file-table">
+												<tbody  >
+													<tr class="dynamic-file-row d-none">
 														<td width="45%">File name</td>
 														<td width="45%">
 															<select class="form-select" aria-label="Default select example">
@@ -349,11 +349,11 @@
 																<option value="">১১. স্থানীয় চেয়ারম্যান / ওয়ার্ড কমিশনার / গণ্যমান্য ব্যক্তির সুপারিশ</option>
 															</select>
 														</td>
-														<td width="10%"><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction()"><i class="fa fa-close"></i></button></td>
+														<td width="10%"><button type="button" class="btn btn-danger" id="removeTr"><i class="fa fa-close"></i></button></td>
 													</tr>
 												</tbody>
 											</table>
-											<input type="file" class="btn" id="dynamic-file-input" onclick="cloneRow()">
+											<input type="file" class="btn" id="dynamic-file-input" onchange="cloneRow()">
 										</div>
 									</div>
 								</div>

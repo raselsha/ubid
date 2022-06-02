@@ -107,31 +107,6 @@ for (i = 0; i < x.length; i++) {
 x[n].classList.add("active");
 }
 
-
-// ============dynamic file upload into form data tab 4==========
-
-function cloneRow() {
-    file_input = document.getElementById('dynamic-file-input'),
-    file_table = document.getElementById('dynamic-file-table');
-    
-    var row = document.querySelector(".dynamic-file-row"); // find row to copy
-    var table = document.getElementById("dynamic-file-table"); // find table to append to
-    var clone = row.cloneNode(true); // copy children too
-    clone.class = "dynamic-file-row"; // change id or other attributes/contents
-    table.appendChild(clone); // add new row to end of table
-  }
-  function SomeDeleteRowFunction() {
-    // event.target will be the input element.
-    var td = event.target.parentNode; 
-    var tr = td.parentNode; // the row to be removed
-    tr.parentNode.removeChild(tr);
-    if( copiedItem.length>1){
-        parent.removeChild(parent.lastChild);
-    } 
-}
-
-
-
 // ================language switch button functions================
 hideEnText()
 function hideEnText(){
@@ -150,10 +125,10 @@ function hideEnText(){
 }
 
 
-//jquery////////////////////////////////////////////
+///////////////////////////////////jquery////////////////////////////////////////////
 
+// ===================clone form data================
 $('.remove-more').hide();
-
 $(document).on('click', '.add-more', function (ev) {
     var $clone = $(this).parent().clone(true);
     $clone.appendTo($('.append-form'));
@@ -166,4 +141,17 @@ $(document).on('click', '.add-more', function (ev) {
 $(document).on('click', '.remove-more', function () {
     $(this).parent().remove();
 
+});
+// =====================clone dynamic attachment files==============================
+function cloneRow() {
+    var $tableBody = $('#dynamic-file-table').find("tbody"),
+    $trLast = $tableBody.find("tr:last"),
+    $trNew = $trLast.clone();
+    $trLast.after($trNew);
+    $trLast.removeClass('d-none');
+    $trLast.addClass('d-block');
+}
+
+$("#dynamic-file-table").on("click", "#removeTr", function() {
+    $(this).closest("tr").remove();
 });
