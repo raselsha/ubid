@@ -3,11 +3,11 @@ showTab(currentTab); // Display the current tab
 
 function showTab(n) {
 // This function will display the specified tab of the form ...
-var x = document.getElementsByClassName("tab");
-for(var i=0;i<x.length;i++){
-    x[i].style.display = "none";
+var tab = document.getElementsByClassName("tab");
+for(var i=0;i<tab.length;i++){
+    tab[i].style.display = "none";
 }
-x[n].style.display = "block";
+tab[n].style.display = "block";
 currentTab = n;
 // ... and fix the Previous/Next buttons:
 if (n == 0) {
@@ -15,7 +15,7 @@ if (n == 0) {
 } else {
     document.getElementById("prevBtn").style.display = "inline";
 }
-if (n == (x.length - 1)) {
+if (n == (tab.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "দাখিল";
 }else{
     document.getElementById("nextBtn").innerHTML = "পরবর্তী";
@@ -26,15 +26,15 @@ stepIndicator(n);
 
 function nextPrev(n) {
 // This function will figure out which tab to display
-var x = document.getElementsByClassName("tab");
+var tabs = document.getElementsByClassName("tab");
 // Exit the function if any field in the current tab is invalid:
 if (n == 1 && !validateForm()) return false;
 // Hide the current tab:
-x[currentTab].style.display = "none";
+tabs[currentTab].style.display = "none";
 // Increase or decrease the current tab by 1:
 currentTab = currentTab + n;
 // if you have reached the end of the form... :
-if (currentTab >= x.length) {
+if (currentTab >= tabs.length) {
     //...the form gets submitted:
     document.getElementById("regForm").submit();
     return false;
@@ -44,21 +44,48 @@ showTab(currentTab);
 }
 
 
+// ================First tab items show hide functions================
+showHidefirsTabItems();
+function showHidefirsTabItems(){
+
+    var tabs = document.getElementsByClassName("tab");
+    var inputs = tabs[currentTab].getElementsByTagName("input");
+
+    var firstTabItems= document.getElementById('first-tab-items');
+    var radio1= document.getElementById('radio1');
+    var radio2= document.getElementById('radio2');
+    if (radio1.checked == true){
+        firstTabItems.classList.add('d-block');
+        firstTabItems.classList.remove('d-none');
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].setAttribute("required",'required');
+        } 
+    }
+    if (radio2.checked == true){
+        firstTabItems.classList.add('d-none');
+        firstTabItems.classList.remove('d-block'); 
+        // A loop that checks every input field to remove required:
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].removeAttribute("required");
+        } 
+    }
+
+}
 
 function validateForm() {
     // This function deals with validation of the form fields
-    var x, y, i, valid = true;
-    x = document.getElementsByClassName("tab");
-    y = x[currentTab].getElementsByTagName("input");
+    var tabs, inputs, i, valid = true;
+    tabs = document.getElementsByClassName("tab");
+    inputs = tabs[currentTab].getElementsByTagName("input");
     // A loop that checks every input field in the current tab:
-    for (i = 0; i < y.length; i++) {
-      // If a field is empty...
-    if (y[i].value == "") {
-        // add an "invalid" class to the field:
-        y[i].className += " invalid";
-        // and set the current valid status to false:
-        valid = false;
-    }
+    for (i = 0; i < inputs.length; i++) {
+        // If a field is empty...
+        if (inputs[i].value == "" && inputs[i].hasAttribute('required') ) {
+            // add an "invalid" class to the field:
+            inputs[i].classList.add('invalid');;
+            // and set the current valid status to false:
+            valid = false;
+        }
     }
     // If the valid status is true, mark the step as finished and valid:
     if (valid) {
@@ -136,25 +163,7 @@ function cloneRow() {
     } 
 }
 
-// ================First tab items show hide functions================
-showHidefirstItems()
-function showHidefirsTabItems(){
-    var firstTabItems= document.getElementById('first-tab-items');
-    var inlineRadio1= document.getElementById('inlineRadio1');
-    var inlineRadio2= document.getElementById('inlineRadio2');
-    firstTabItems.classList.add('d-block');
-    if (inlineRadio1.checked == true){
-    firstTabItems.classList.add('d-block');
-    firstTabItems.classList.remove('d-none');
-        
-    }
-    if (inlineRadio2.checked == true){
-    firstTabItems.classList.remove('d-block');
-    firstTabItems.classList.add('d-none');
-        
-    }
 
-}
 
 // ================language switch button functions================
 hideEnText()
