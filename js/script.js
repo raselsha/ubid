@@ -128,7 +128,7 @@ function hideEnText(){
 ///////////////////////////////////jquery////////////////////////////////////////////
 
 // ===================clone form data================
-$('.remove-more').hide();
+$('.remove-more:first').hide();
 $(document).on('click', '.add-more', function (ev) {
     var $clone = $(this).parent().clone(true);
     $clone.appendTo($('.append-form'));

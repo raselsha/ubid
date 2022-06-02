@@ -340,6 +340,7 @@ label{
     bottom:-12px;
     padding: 3px 5px;
     line-height: 1;
+    margin-left:-12px;
 }
 .remove-more{
     left: 50%;
@@ -347,6 +348,7 @@ label{
     bottom:-12px;
     padding: 3px 5px;
     line-height: 1;
+    margin-left: -12px;
 }
 /* =================icon menu========= */
 .icon-menu-overlay{
