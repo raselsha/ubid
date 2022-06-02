@@ -107,40 +107,7 @@ for (i = 0; i < x.length; i++) {
 x[n].classList.add("active");
 }
 
-// ====================form tab forminput duplication==================
 
-btnRemoveShowHide();
-
-function btnRemoveShowHide(){
-    var copiedItem = document.querySelectorAll('.copy-tab-form');
-    if( copiedItem.length>1){
-        document.getElementById('btnRemove').classList.remove('d-none');
-        document.getElementById('btnRemove').classList.add('d-inline');
-    }else{
-        document.getElementById('btnRemove').classList.remove('d-inline');
-        document.getElementById('btnRemove').classList.add('d-none');
-    }
-}
-
-function duplicate(){
-    const elementToClone = document.querySelector('.copy-tab-form');
-    let count = 0;
-    while(count < 1) {
-        let clone = elementToClone.cloneNode(true);
-        document.querySelector('.copy-tab-form').parentNode.appendChild(clone);
-        count++;
-    }
-    btnRemoveShowHide();
-}
-
-function removeduplicate(){
-    var copiedItem = document.querySelectorAll('.copy-tab-form');
-    const parent = document.querySelector('.third-tab-form');
-    if( copiedItem.length>1){
-        parent.removeChild(parent.lastChild);
-    } 
-    btnRemoveShowHide();
-}
 // ============dynamic file upload into form data tab 4==========
 
 function cloneRow() {
@@ -181,3 +148,22 @@ function hideEnText(){
     langEn.classList.add('d-block');
   }
 }
+
+
+//jquery////////////////////////////////////////////
+
+$('.remove-more').hide();
+
+$(document).on('click', '.add-more', function (ev) {
+    var $clone = $(this).parent().clone(true);
+    $clone.appendTo($('.append-form'));
+    
+    $('.remove-more').show();
+    $(this).hide();
+    
+});
+
+$(document).on('click', '.remove-more', function () {
+    $(this).parent().remove();
+
+});
