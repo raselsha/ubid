@@ -143,12 +143,17 @@ $(document).on('click', '.remove-more', function () {
 });
 // =====================clone dynamic attachment files==============================
 function cloneRow() {
+    $('.progress').removeClass('d-none');
+    $('.progress').css('width','100%');
     var $tableBody = $('#dynamic-file-table').find("tbody"),
     $trLast = $tableBody.find("tr:last"),
     $trNew = $trLast.clone();
     $trLast.after($trNew);
     $trLast.removeClass('d-none');
-    $trLast.addClass('d-block');
+    var filename = $('#dynamic-file-input').val().replace(/C:\\fakepath\\/i, '');
+    $trLast.find("td:first").text(filename);
+    $('#dynamic-file-input:last').val(null);
+    $('.progress').addClass('d-none');
 }
 
 $("#dynamic-file-table").on("click", "#removeTr", function() {
