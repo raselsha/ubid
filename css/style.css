@@ -244,13 +244,7 @@ html:lang(en) body{
     line-height:0 !important; 
     margin: 5px 0;
 }
-/* =================owl carousel=========== */
-.owl-theme .owl-dots .owl-dot.active span{
-    background: #7f3183;
-}
-.owl-item{
-    box-sizing: border-box;
-}
+
 /* =========================regi form list timeline============ */
 .timeline {
     margin: 0;
@@ -342,19 +336,18 @@ label{
 }
 .add-more{
     left: 50%;
-    right: 50%;
-    bottom:-12px;
-    padding: 3px 5px;
-    line-height: 1;
-    margin-left:-12px;
+    bottom: -13px;
+    margin-left: -15px;
+    line-height: 0;
+    padding: 4px;
 }
 .remove-more{
     left: 50%;
-    right: 50%;
-    bottom:-12px;
-    padding: 3px 5px;
-    line-height: 1;
-    margin-left: -12px;
+    bottom: -13px;
+    margin-left: -15px;
+    padding: 0;
+    line-height: 0;
+    padding: 4px;
 }
 /* =================icon menu========= */
 .icon-menu-overlay{
