@@ -437,9 +437,7 @@ footer p{
 }
 
 @media (max-width:768px){
-    .top-menu{
-        display: none;
-    }
+
     .hero{
         min-height:514px;
     }

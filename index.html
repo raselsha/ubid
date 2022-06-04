@@ -27,7 +27,8 @@
 					</a>
 				</div>
 				<div class="col-8 d-flex align-items-center justify-content-end ">
-					<ul class="nav top-menu ">
+					<!-- this nav menu will not display on mobile screen -->
+					<ul class="nav top-menu  d-none d-sm-flex">
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="#">ইউবিআইডি</a>
 						</li>
@@ -41,6 +42,20 @@
 					<div class="">
 						<img class="d-inline-block" src="images/mujib-100.png" alt="" width="96">
 					</div>
+				</div>
+				<!-- this nav menu will  display only mobile screen -->
+				<div class="col d-flex d-md-none ">
+					<ul class="nav top-menu mx-auto">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">ইউবিআইডি</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">হেল্প ডেস্ক</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">ইউবিআইডি ম্যানুয়াল</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -75,16 +90,16 @@
 						</li>
 					</ul>
 				</div>
-				<ul class="navbar-nav me-auto ">
+				<ul class="navbar-nav m-0 me-md-auto d-block d-md-flex navbar-right">
 					<li class="nav-item">
-						<a class="nav-link " aria-current="page" href="#"><i class="fa fa-search"></i>
+						<a class="nav-link px-1" aria-current="page" href="#"><i class="fa fa-search"></i>
 						</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link " aria-current="page" href="#">Citizen Login</a>
+					<li class="nav-item ">
+						<a class="nav-link px-1" aria-current="page" href="#">Citizen Login</a>
 					</li>
-					<li class="nav-item ps-3">
-						<div class="form-check form-switch d-inline position-relative">
+					<li class="nav-item ps-2">
+						<div class="form-check form-switch d-inline position-relative ">
 							<input class="form-check-input float-none" type="checkbox" id="flexSwitchCheckDefault" onclick="hideEnText()">
 							<div class="position-absolute d-inline-block lang-en">En</div>
 						</div>
